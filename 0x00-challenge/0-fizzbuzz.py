@@ -36,3 +36,11 @@ if __name__ == '__main__':
 
     number = int(sys.argv[1])
     fizzbuzz(number)
+    try:
+        number = int(sys.argv[1])
+        fizzbuzz(number)
+    except ValueError:
+        print("Input is not a number")
+        print("Usage: ./0-fizzbuzz.py <number>")
+        print("Example: ./0-fizzbuzz.py 89")
+        sys.exit(1)
