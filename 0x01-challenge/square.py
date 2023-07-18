@@ -18,10 +18,13 @@ class Square:
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        return "{}/{}".format(self.width, self.height)
+        square_str = ''
+        for _ in range(self.height):
+            square_str += '#' * self.width + '\n'
+        return square_str
 
 if __name__ == "__main__":
-    s = Square(width=9, height=9)
+    s = Square(width=4, height=4)
     print(s)
     print(s.area_of_my_square())
     print(s.perimeter_of_my_square())
