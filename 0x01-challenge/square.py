@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-class square():
+class Square():
     
     width = 0
     height = 0
@@ -24,7 +24,7 @@ class square():
         return square_str
 
 if __name__ == "__main__":
-    s = square(width=4, height=4)
+    s = Square(width=4, height=4)
     print(s)
     print(s.area_of_my_square())
     print(s.perimeter_of_my_square())
